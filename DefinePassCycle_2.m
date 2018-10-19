@@ -1,4 +1,4 @@
-NODATA=NaN;
+NODATA=-9998;
 listing=dir(DataDir);
 idx=[];
 for i = 1:length(listing)
