@@ -7,9 +7,9 @@ for i=1:npass
     
     switch Type
         case 'Node'
-            PassIDs=[[Package(i).A.Reach_ID]' [Package(i).A.Node_ID]'];
+            PassIDs=[[Package(i).A.reach_id]' [Package(i).A.node_id]'];
         case 'Reach'
-            PassIDs=[Package(i).A.Reach_ID]';
+            PassIDs=[Package(i).A.reach_id]';
     end
     
     PassData=[Package(i).A.(Field)]';

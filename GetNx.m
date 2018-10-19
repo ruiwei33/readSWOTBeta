@@ -9,7 +9,7 @@ npass=length(Reaches);             %number of passes / obs times
 
 ReachIDs=[];
 for i=1:npass
-    ReachIDs=[ReachIDs; [Reaches(i).A.Reach_ID]';];            
+    ReachIDs=[ReachIDs; [Reaches(i).A.reach_id]';];
 end
 
 ObsReachIDs=unique(ReachIDs);
@@ -17,7 +17,7 @@ NxReach=length(ObsReachIDs);
 
 NodeIDs=[];
 for i=1:npass
-    NodeIDs=[NodeIDs; [[Nodes(i).A.Reach_ID]' [Nodes(i).A.Node_ID]'];];            
+    NodeIDs=[NodeIDs; [[Nodes(i).A.reach_id]' [Nodes(i).A.node_id]'];];            
 end
 
 ObsNodeIDs=unique(NodeIDs,'rows');
